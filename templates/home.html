@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Qing blog</title>
+    <link href="static/default.css" rel="stylesheet" />
+</head>
+<body>
+<div id="header">
+	<h1>{{ web_title }}</h1>
+	<h2>By <a href="http://weibo.com/elegentqing">Qing的微博</a></h2>
+</div>
+<div id="content">
+
+	<div id="colOne">
+		<div id="menu1">
+			<ul>
+				<li id="menu-01"><a href="home.html">Home</a></li>
+				<li id="menu-02"><a href="about.html">介绍</a></li>
+				<li id="menu-04"><a href="Qing.html">About Qing</a></li>
+			</ul>
+		</div>
+
+	</div>
+
+	<div id="colTwo">
+		<h2>欢迎来到我的主页!</h2>
+        <p>这是我利用tornado写的个人博客，还在不断改进。</p>
+		<ul>
+            {% for title in title_name %}
+			<li><a href=""><strong>{{ title }}</strong></a></li>
+            {% end %}
+		</ul>
+
+        <p>这是一个用于个人学习的博客，作者其实是一名linux运维，对python很有兴趣，所以尝试用tornado框架写了一个个人博客，略显简陋，还在不断改进，希望大家给予鼓励。</p>
+    </div>
+    <div class="margin-news">
+			<h2></h2>
+			<p><strong>我的csdn博客地址：</strong> <a href="http://blog.csdn.net/qing_sunny"><strong>前往</strong></a></p>
+			<p><strong>我的github地址：</strong> <a href="https://github.com/LiQing8839"><strong>前往</strong></a></p>
+		</div>
+	<div style="clear: both;">&nbsp;</div>
+</div>
+<div id="footer">
+	<p>Qing 的github<a href="http://www.cssk8.com"><strong>Qing</strong></a></p>
+</div>
+</body>
+</html>
